@@ -216,7 +216,7 @@ export default function App() {
               onChange={(e) => handleChange(e.target.value)}
               type="number"
               min={1}
-              max={34}
+              max={32}
               className="w-full py-2 px-4 rounded border border-slate-300 outline-0"
             />
           </label>
