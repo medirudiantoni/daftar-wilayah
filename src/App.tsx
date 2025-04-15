@@ -38,7 +38,7 @@ export default function App() {
 
   const handleChange = (value: string) => {
     const number = parseInt(value);
-    if (!isNaN(number) && number > 0 && number <= 34) {
+    if (!isNaN(number) && number > 0 && number <= 32) {
       setCount(number);
     } else {
       setCount(0);
@@ -210,7 +210,7 @@ export default function App() {
 
         <form onSubmit={handleSubmit} className="w-full p-4">
           <label className="block mb-2">
-            <p>Masukkan jumlah provinsi yang ingin ditampilkan (1-34)</p>
+            <p>Masukkan jumlah provinsi yang ingin ditampilkan (1-32)</p>
             <input
               value={count}
               onChange={(e) => handleChange(e.target.value)}
